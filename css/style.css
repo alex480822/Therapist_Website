@@ -1,0 +1,15 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.hero-img {
+  background-image: url(/i);
+}
+/*# sourceMappingURL=style.css.map */
