@@ -48,48 +48,70 @@ nav .navbar-collapse .nav-link:hover {
   background-color: #7d41e1;
 }
 
-header {
+header #home {
   background-image: url("/img/bryan-garces-IXUM4cJynP0-unsplash_small.jpg");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header h1 {
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 header .hero-img {
   position: relative;
-  height: 800px;
+  height: 100vh;
   background-image: url("/img/woman_without_bg.png");
   background-repeat: no-repeat;
   background-size: auto calc(100% - 100px);
   background-position: calc(50% + 40px) bottom;
 }
 
-header .hero-container {
+header .hero-img .hero-container {
   position: absolute;
-  top: 33%;
-  left: 50%;
+  top: 30%;
+  left: 25%;
+  width: 150px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   background-color: #FFF;
   border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px;
+          box-shadow: 2px 2px 5px;
 }
 
-header .hero-container .hero-name {
+header .hero-img .hero-container .hero-name {
   text-align: left;
 }
 
-@media (min-width: 992px) {
-  nav {
+@media (min-width: 576px) {
+  header nav {
+    height: 72px;
+  }
+  header .hero-img .hero-container {
+    width: 250px;
+  }
+}
+
+@media (min-width: 768px) {
+  header nav {
     height: 82px;
   }
-  header {
+  header .hero-img .hero-container {
+    width: 350px;
+  }
+}
+
+@media (min-width: 992px) {
+  header nav {
+    height: 102px;
+  }
+  header header #home {
     background-image: url("/img/bryan-garces-IXUM4cJynP0-unsplash_big.jpg");
-    background-position: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
