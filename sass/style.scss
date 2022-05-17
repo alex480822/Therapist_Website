@@ -1,8 +1,85 @@
-*, *::before, *::after{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+@import "./colors";
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
-body{
-    background-color: #ddd;
+body {
+	position: relative;
+	background-color: #ddd;
+	font-family: "Montserrat", sans-serif;
+}
+
+nav {
+	background-color: $white;
+	z-index: 1;
+	.navbar-brand {
+        color: rgb(125, 65, 225);
+		font-weight: bold;
+	}
+	.active {
+		color: $main-color;
+	}
+	.fa-hands-holding-child {
+		font-size: 30px;
+	}
+	.navbar-collapse {
+		justify-content: flex-end;
+		.nav-link {
+			color: black;
+			transition: color 0.5s background-color 0.5s;
+		}
+		.nav-link:hover {
+			color: $white;
+            background-color: $main-color;
+		}
+	}
+}
+
+header {
+    background-image: url("/img/bryan-garces-IXUM4cJynP0-unsplash_small.jpg");
+    background-repeat: repeat;
+
+	h1 {
+		text-transform: uppercase;
+		font-size: 25px;
+	}
+	.hero-img {
+        position: relative;
+        height: 800px;
+		background-image: url("/img/woman_without_bg.png");
+        background-repeat: no-repeat;
+        background-size: auto calc(100% - 100px);
+        background-position: calc(50% + 40px) bottom;
+	}
+    .hero-container{
+        position: absolute;
+        top: 33%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 15px;
+        text-align: center;
+        background-color: $white;
+        border-radius: 10px;
+        .hero-name{
+            text-align: left;
+        }
+    }
+}
+
+@media (min-width:350px) {
+    
+    
+}
+
+@media (min-width: 992px) {
+    nav {
+		height: 82px;
+	}
+    header{
+        background-image: url("/img/bryan-garces-IXUM4cJynP0-unsplash_big.jpg");
+        background-position: center;
+    }
 }
