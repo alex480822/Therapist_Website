@@ -14,6 +14,7 @@ body {
 
 nav {
 	background-color: $white;
+	box-shadow: 0px 1px 10px $main-color;
 	z-index: 1;
 	.navbar-brand {
 		color: rgb(125, 65, 225);
@@ -28,8 +29,10 @@ nav {
 	.navbar-collapse {
 		justify-content: flex-end;
 		.nav-link {
+			margin: 0px 5px;
 			color: black;
 			transition: color 0.5s background-color 0.5s;
+			border-radius: 8px;
 		}
 		.nav-link:hover {
 			color: $white;
@@ -107,7 +110,11 @@ header {
 }
 
 @media (min-width: 768px) {
-
+	nav {
+		.fa-hands-holding-child {
+			font-size: 35px;
+		}
+	}
 	header {
 		.hero-bg {
 			background-image: url("/img/bryan-garces-IXUM4cJynP0-unsplash_big.jpg");
@@ -132,14 +139,12 @@ header {
 	}
 }
 @media (min-width: 900px) {
-
 	header {
 		.hero-bg {
 			background-image: url("/img/bryan-garces-IXUM4cJynP0-unsplash_big.jpg");
 			.hero-img {
 				.hero-container {
 					top: 45%;
-				
 				}
 			}
 		}
@@ -148,7 +153,7 @@ header {
 
 @media (min-width: 992px) {
 	nav {
-		height: 102px;
+		height: 82px;
 	}
 	header {
 		.hero-bg {
@@ -175,7 +180,7 @@ header {
 }
 @media (min-width: 1200px) {
 	nav {
-		height: 102px;
+		height: 82px;
 	}
 	header {
 		.hero-bg {

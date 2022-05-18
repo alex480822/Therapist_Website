@@ -15,6 +15,8 @@ body {
 
 nav {
   background-color: #FFF;
+  -webkit-box-shadow: 0px 1px 10px #7d41e1;
+          box-shadow: 0px 1px 10px #7d41e1;
   z-index: 1;
 }
 
@@ -38,9 +40,11 @@ nav .navbar-collapse {
 }
 
 nav .navbar-collapse .nav-link {
+  margin: 0px 5px;
   color: black;
   -webkit-transition: color 0.5s background-color 0.5s;
   transition: color 0.5s background-color 0.5s;
+  border-radius: 8px;
 }
 
 nav .navbar-collapse .nav-link:hover {
@@ -117,6 +121,9 @@ header .hero-bg .hero-img .hero-container .hero-description {
 }
 
 @media (min-width: 768px) {
+  nav .fa-hands-holding-child {
+    font-size: 35px;
+  }
   header .hero-bg {
     background-image: url("/img/bryan-garces-IXUM4cJynP0-unsplash_big.jpg");
   }
@@ -148,7 +155,7 @@ header .hero-bg .hero-img .hero-container .hero-description {
 
 @media (min-width: 992px) {
   nav {
-    height: 102px;
+    height: 82px;
   }
   header .hero-bg .hero-img {
     background-position: calc(50% + 180px) bottom;
@@ -172,7 +179,7 @@ header .hero-bg .hero-img .hero-container .hero-description {
 
 @media (min-width: 1200px) {
   nav {
-    height: 102px;
+    height: 82px;
   }
   header .hero-bg .hero-img {
     background-size: auto calc(100% - 100px);
