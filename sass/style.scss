@@ -39,74 +39,164 @@ nav {
 }
 
 header {
-	#home {
+	.hero-bg {
 		background-image: url("/img/bryan-garces-IXUM4cJynP0-unsplash_small.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
-	}
-
-	h1 {
-		text-transform: uppercase;
-		font-size: 20px;
-		font-weight: bold;
-	}
-	.hero-img {
-		position: relative;
-		height: 100vh;
-		background-image: url("/img/woman_without_bg.png");
-		background-repeat: no-repeat;
-
-		background-size: auto calc(100% - 100px);
-		background-position: calc(50% + 40px) bottom;
-		//     background-size: auto calc(100% - 100px);
-		//     background-position: calc(50% + 240px) bottom;
-		// }
-		.hero-container {
-			position: absolute;
-			top: 30%;
-			left: 25%;
-			width: 150px;
-			transform: translate(-50%, -50%);
-			padding: 10px;
-			text-align: center;
-			background-color: $white;
-			border-radius: 10px;
-			box-shadow: 2px 2px 5px;
-			.hero-name {
-				text-align: left;
-			}
-		}
-	}
-
-	@media (min-width: 576px) {
-		nav {
-			height: 72px;
-		}
 		.hero-img {
+			position: relative;
+			height: 100vh;
+			background-image: url("/img/woman_without_bg.png");
+			background-repeat: no-repeat;
+			background-size: auto calc(100% - 100px);
+			background-position: calc(50% + 90px) bottom;
+			//     background-size: auto calc(100% - 100px);
+			//     background-position: calc(50% + 240px) bottom;
+			// }
 			.hero-container {
-				width: 250px;
+				position: absolute;
+				top: 35%;
+				left: 25%;
+				width: 170px;
+				transform: translate(-50%, -50%);
+				padding: 10px;
+				background-color: $white;
+				border-radius: 10px;
+				box-shadow: 2px 2px 5px;
+				.hero-text {
+					text-transform: uppercase;
+					font-size: 16px;
+					font-weight: bold;
+					text-align: center;
+				}
+				.hero-name {
+					text-align: left;
+					text-decoration: underline;
+				}
+				.hero-description {
+					margin-top: 10px;
+					text-align: left;
+				}
 			}
 		}
 	}
+}
 
-	@media (min-width: 768px) {
-		nav {
-			height: 82px;
-		}
-		.hero-img {
-			.hero-container {
-				width: 350px;
+@media (min-width: 576px) {
+	header {
+		.hero-bg {
+			background-repeat: no-repeat;
+			background-position: right;
+			.hero-img {
+				background-size: auto calc(100%);
+				.hero-container {
+					width: 250px;
+					padding: 25px;
+					top: 35%;
+					.hero-text {
+						font-size: 16px;
+					}
+					.hero-description {
+						font-size: 12px;
+						text-align: justify;
+					}
+				}
 			}
 		}
 	}
+}
 
-	@media (min-width: 992px) {
-		nav {
-			height: 102px;
+@media (min-width: 768px) {
+
+	header {
+		.hero-bg {
+			background-image: url("/img/bryan-garces-IXUM4cJynP0-unsplash_big.jpg");
+			.hero-img {
+				.hero-container {
+					width: 350px;
+					padding: 25px;
+					top: 31%;
+					.hero-text {
+						font-size: 20px;
+					}
+					.hero-name {
+						font-size: 17px;
+					}
+					.hero-description {
+						font-size: 15px;
+						text-align: justify;
+					}
+				}
+			}
 		}
-		header {
-			#home {
-				background-image: url("/img/bryan-garces-IXUM4cJynP0-unsplash_big.jpg");
+	}
+}
+@media (min-width: 900px) {
+
+	header {
+		.hero-bg {
+			background-image: url("/img/bryan-garces-IXUM4cJynP0-unsplash_big.jpg");
+			.hero-img {
+				.hero-container {
+					top: 45%;
+				
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	nav {
+		height: 102px;
+	}
+	header {
+		.hero-bg {
+			.hero-img {
+				background-position: calc(50% + 180px) bottom;
+				.hero-container {
+					width: 350px;
+					padding: 35px;
+					top: 30%;
+					.hero-text {
+						font-size: 22px;
+					}
+					.hero-name {
+						font-size: 18px;
+					}
+					.hero-description {
+						font-size: 14px;
+						text-align: justify;
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1200px) {
+	nav {
+		height: 102px;
+	}
+	header {
+		.hero-bg {
+			.hero-img {
+				background-size: auto calc(100% - 100px);
+				background-position: calc(50% + 240px) bottom;
+				.hero-container {
+					width: 500px;
+					padding: 50px;
+					top: 35%;
+					.hero-text {
+						font-size: 24px;
+					}
+					.hero-name {
+						font-size: 19px;
+					}
+					.hero-description {
+						font-size: 16px;
+						text-align: justify;
+					}
+				}
 			}
 		}
 	}

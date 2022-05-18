@@ -48,70 +48,150 @@ nav .navbar-collapse .nav-link:hover {
   background-color: #7d41e1;
 }
 
-header #home {
+header .hero-bg {
   background-image: url("/img/bryan-garces-IXUM4cJynP0-unsplash_small.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-header h1 {
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-header .hero-img {
+header .hero-bg .hero-img {
   position: relative;
   height: 100vh;
   background-image: url("/img/woman_without_bg.png");
   background-repeat: no-repeat;
   background-size: auto calc(100% - 100px);
-  background-position: calc(50% + 40px) bottom;
+  background-position: calc(50% + 90px) bottom;
 }
 
-header .hero-img .hero-container {
+header .hero-bg .hero-img .hero-container {
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 25%;
-  width: 150px;
+  width: 170px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 10px;
-  text-align: center;
   background-color: #FFF;
   border-radius: 10px;
   -webkit-box-shadow: 2px 2px 5px;
           box-shadow: 2px 2px 5px;
 }
 
-header .hero-img .hero-container .hero-name {
+header .hero-bg .hero-img .hero-container .hero-text {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+header .hero-bg .hero-img .hero-container .hero-name {
+  text-align: left;
+  text-decoration: underline;
+}
+
+header .hero-bg .hero-img .hero-container .hero-description {
+  margin-top: 10px;
   text-align: left;
 }
 
 @media (min-width: 576px) {
-  header nav {
-    height: 72px;
+  header .hero-bg {
+    background-repeat: no-repeat;
+    background-position: right;
   }
-  header .hero-img .hero-container {
+  header .hero-bg .hero-img {
+    background-size: auto calc(100%);
+  }
+  header .hero-bg .hero-img .hero-container {
     width: 250px;
+    padding: 25px;
+    top: 35%;
+  }
+  header .hero-bg .hero-img .hero-container .hero-text {
+    font-size: 16px;
+  }
+  header .hero-bg .hero-img .hero-container .hero-description {
+    font-size: 12px;
+    text-align: justify;
   }
 }
 
 @media (min-width: 768px) {
-  header nav {
-    height: 82px;
+  header .hero-bg {
+    background-image: url("/img/bryan-garces-IXUM4cJynP0-unsplash_big.jpg");
   }
-  header .hero-img .hero-container {
+  header .hero-bg .hero-img .hero-container {
     width: 350px;
+    padding: 25px;
+    top: 31%;
+  }
+  header .hero-bg .hero-img .hero-container .hero-text {
+    font-size: 20px;
+  }
+  header .hero-bg .hero-img .hero-container .hero-name {
+    font-size: 17px;
+  }
+  header .hero-bg .hero-img .hero-container .hero-description {
+    font-size: 15px;
+    text-align: justify;
+  }
+}
+
+@media (min-width: 900px) {
+  header .hero-bg {
+    background-image: url("/img/bryan-garces-IXUM4cJynP0-unsplash_big.jpg");
+  }
+  header .hero-bg .hero-img .hero-container {
+    top: 45%;
   }
 }
 
 @media (min-width: 992px) {
-  header nav {
+  nav {
     height: 102px;
   }
-  header header #home {
-    background-image: url("/img/bryan-garces-IXUM4cJynP0-unsplash_big.jpg");
+  header .hero-bg .hero-img {
+    background-position: calc(50% + 180px) bottom;
+  }
+  header .hero-bg .hero-img .hero-container {
+    width: 350px;
+    padding: 35px;
+    top: 30%;
+  }
+  header .hero-bg .hero-img .hero-container .hero-text {
+    font-size: 22px;
+  }
+  header .hero-bg .hero-img .hero-container .hero-name {
+    font-size: 18px;
+  }
+  header .hero-bg .hero-img .hero-container .hero-description {
+    font-size: 14px;
+    text-align: justify;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav {
+    height: 102px;
+  }
+  header .hero-bg .hero-img {
+    background-size: auto calc(100% - 100px);
+    background-position: calc(50% + 240px) bottom;
+  }
+  header .hero-bg .hero-img .hero-container {
+    width: 500px;
+    padding: 50px;
+    top: 35%;
+  }
+  header .hero-bg .hero-img .hero-container .hero-text {
+    font-size: 24px;
+  }
+  header .hero-bg .hero-img .hero-container .hero-name {
+    font-size: 19px;
+  }
+  header .hero-bg .hero-img .hero-container .hero-description {
+    font-size: 16px;
+    text-align: justify;
   }
 }
 /*# sourceMappingURL=style.css.map */
