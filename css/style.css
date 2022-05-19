@@ -1,3 +1,7 @@
+:root {
+  --bs-border-color-translucent: rgba(125, 65, 225, 0.75);
+}
+
 *,
 *::before,
 *::after {
@@ -96,6 +100,57 @@ header .hero-bg .hero-img .hero-container .hero-name {
 header .hero-bg .hero-img .hero-container .hero-description {
   margin-top: 10px;
   text-align: left;
+}
+
+.consultation {
+  background-color: #FFF;
+}
+
+.consultation .container .consultation-localization {
+  padding: 10px 0px;
+  color: #7d41e1;
+}
+
+.consultation .container .consultation-describe {
+  padding: 10px 0px;
+  font-size: 18px;
+}
+
+.consultation .container .consultation-btn {
+  background-color: #7d41e1;
+  color: #FFF;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.card-group {
+  overflow: hidden;
+  padding: 0px;
+}
+
+.card-group .card {
+  margin: 30px;
+  -webkit-box-shadow: 1px 1px 1px 1px black;
+          box-shadow: 1px 1px 1px 1px black;
+}
+
+.card-group .card img {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-group .card .card-title {
+  padding-top: 20px;
+  margin-top: 25px;
+  color: #7d41e1;
+  border-top: 1px solid gray;
+}
+
+.card-group .card:hover {
+  -webkit-box-shadow: 0px 0px 1px black;
+          box-shadow: 0px 0px 1px black;
 }
 
 @media (min-width: 576px) {

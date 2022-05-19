@@ -1,4 +1,7 @@
 @import "./colors";
+:root {
+	--bs-border-color-translucent: rgba(125, 65, 225, 0.75);
+}
 *,
 *::before,
 *::after {
@@ -82,6 +85,48 @@ header {
 				}
 			}
 		}
+	}
+}
+
+.consultation {
+	background-color: $white;
+	.container {
+		.consultation-localization {
+			padding: 10px 0px;
+			color: $main-color;
+		}
+		.consultation-describe {
+			padding: 10px 0px;
+			font-size: 18px;
+		}
+		.consultation-btn{
+			background-color: $main-color;
+			color: $white;
+			padding: 10px;
+			border-radius: 10px;
+			font-size: 18px;
+		}
+	}
+}
+.card-group {
+	overflow: hidden;
+	padding: 0px;
+	.card {
+		margin: 30px;
+		box-shadow: 1px 1px 1px 1px black;
+		img {
+			height: 400px;
+			object-fit: cover;
+		}
+		.card-title {
+			padding-top: 20px;
+			margin-top: 25px;
+			color: $main-color;
+			border-top: 1px solid gray;
+		}
+	}
+	.card:hover {
+		box-shadow: 0px 0px 1px black;
 	}
 }
 
