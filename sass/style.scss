@@ -99,7 +99,7 @@ header {
 			padding: 10px 0px;
 			font-size: 18px;
 		}
-		.consultation-btn{
+		.consultation-btn {
 			background-color: $main-color;
 			color: $white;
 			padding: 10px;
@@ -111,18 +111,20 @@ header {
 .card-group {
 	overflow: hidden;
 	padding: 0px;
+	margin-top: 5px;
+	background-color: $main-color;
 	.card {
 		margin: 30px;
-		box-shadow: 1px 1px 1px 1px black;
 		img {
 			height: 400px;
 			object-fit: cover;
+			border-bottom: 1px solid gray;
 		}
 		.card-title {
-			padding-top: 20px;
-			margin-top: 25px;
+			padding: 10px 0px;
 			color: $main-color;
 			border-top: 1px solid gray;
+			border-bottom: 1px solid gray;
 		}
 	}
 	.card:hover {
@@ -149,6 +151,20 @@ header {
 						text-align: justify;
 					}
 				}
+			}
+		}
+	}
+	.card-group {
+		.card {
+			img {
+				height: 250px;
+			}
+			.card-title {
+				margin-top: 20px;
+				font-size: 18px;
+			}
+			.card-text {
+				font-size: 14px;
 			}
 		}
 	}
@@ -179,6 +195,20 @@ header {
 						text-align: justify;
 					}
 				}
+			}
+		}
+	}
+	.card-group {
+		.card {
+			img {
+				height: 400px;
+			}
+			.card-title {
+				margin-top: 20px;
+				font-size: 20px;
+			}
+			.card-text {
+				font-size: 14px;
 			}
 		}
 	}

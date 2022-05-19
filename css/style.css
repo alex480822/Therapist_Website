@@ -127,25 +127,26 @@ header .hero-bg .hero-img .hero-container .hero-description {
 .card-group {
   overflow: hidden;
   padding: 0px;
+  margin-top: 5px;
+  background-color: #7d41e1;
 }
 
 .card-group .card {
   margin: 30px;
-  -webkit-box-shadow: 1px 1px 1px 1px black;
-          box-shadow: 1px 1px 1px 1px black;
 }
 
 .card-group .card img {
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-bottom: 1px solid gray;
 }
 
 .card-group .card .card-title {
-  padding-top: 20px;
-  margin-top: 25px;
+  padding: 10px 0px;
   color: #7d41e1;
   border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 
 .card-group .card:hover {
@@ -173,6 +174,16 @@ header .hero-bg .hero-img .hero-container .hero-description {
     font-size: 12px;
     text-align: justify;
   }
+  .card-group .card img {
+    height: 250px;
+  }
+  .card-group .card .card-title {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .card-group .card .card-text {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -196,6 +207,16 @@ header .hero-bg .hero-img .hero-container .hero-description {
   header .hero-bg .hero-img .hero-container .hero-description {
     font-size: 15px;
     text-align: justify;
+  }
+  .card-group .card img {
+    height: 400px;
+  }
+  .card-group .card .card-title {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .card-group .card .card-text {
+    font-size: 14px;
   }
 }
 
