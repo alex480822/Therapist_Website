@@ -105,6 +105,10 @@ header {
 			padding: 10px;
 			border-radius: 10px;
 			font-size: 18px;
+			transition: 0.5s;
+		}
+		.consultation-btn:hover {
+			box-shadow: 0px 0px 10px $main-color;
 		}
 	}
 }
@@ -121,6 +125,7 @@ header {
 			border-bottom: 1px solid gray;
 		}
 		.card-title {
+			margin: 20px;
 			padding: 10px 0px;
 			color: $main-color;
 			border-top: 1px solid gray;
@@ -128,7 +133,7 @@ header {
 		}
 	}
 	.card:hover {
-		box-shadow: 0px 0px 1px black;
+		box-shadow: 0px 5px 5px white;
 	}
 }
 

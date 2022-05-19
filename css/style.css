@@ -122,6 +122,13 @@ header .hero-bg .hero-img .hero-container .hero-description {
   padding: 10px;
   border-radius: 10px;
   font-size: 18px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.consultation .container .consultation-btn:hover {
+  -webkit-box-shadow: 0px 0px 10px #7d41e1;
+          box-shadow: 0px 0px 10px #7d41e1;
 }
 
 .card-group {
@@ -143,6 +150,7 @@ header .hero-bg .hero-img .hero-container .hero-description {
 }
 
 .card-group .card .card-title {
+  margin: 20px;
   padding: 10px 0px;
   color: #7d41e1;
   border-top: 1px solid gray;
@@ -150,8 +158,8 @@ header .hero-bg .hero-img .hero-container .hero-description {
 }
 
 .card-group .card:hover {
-  -webkit-box-shadow: 0px 0px 1px black;
-          box-shadow: 0px 0px 1px black;
+  -webkit-box-shadow: 0px 5px 5px white;
+          box-shadow: 0px 5px 5px white;
 }
 
 @media (min-width: 576px) {
