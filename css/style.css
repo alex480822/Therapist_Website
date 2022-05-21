@@ -172,8 +172,48 @@ header .hero-bg .hero-img .hero-container .hero-description {
 }
 
 .card-group .row .card:hover {
-  -webkit-box-shadow: 0px 5px 5px white;
-          box-shadow: 0px 5px 5px white;
+  -webkit-box-shadow: 0px 0px 5px white;
+          box-shadow: 0px 0px 5px white;
+}
+
+.therapy {
+  width: 100%;
+}
+
+.therapy h1 {
+  padding: 10px;
+  background-color: #FFF;
+  text-align: center;
+  font-weight: bold;
+  background-color: #7d41e1;
+  color: #FFF;
+  -webkit-box-shadow: 5px 5px 10px black;
+          box-shadow: 5px 5px 10px black;
+}
+
+.therapy .therapy-container .therapy-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 30px;
+  background-color: #FFF;
+}
+
+.therapy .therapy-container .therapy-box .therapy-img img {
+  width: 250px;
+  height: 250px;
+}
+
+.therapy .therapy-container .therapy-box .therapy-text {
+  padding: 20px;
+  border-radius: 30px;
+  margin-left: 20px;
+  background-color: #78e6f2;
+  border: 1px solid #7d41e1;
 }
 
 @media (min-width: 576px) {

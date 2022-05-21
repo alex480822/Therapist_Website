@@ -119,7 +119,7 @@ header {
 	margin-top: 5px;
 	.row {
 		justify-content: space-around;
-		align-items:stretch;
+		align-items: stretch;
 		padding: 20px;
 		.card {
 			padding: 0px;
@@ -136,12 +136,47 @@ header {
 				border-top: 1px solid gray;
 				border-bottom: 1px solid gray;
 			}
-			.card-text{
+			.card-text {
 				font-size: 14px;
 			}
 		}
 		.card:hover {
-			box-shadow: 0px 5px 5px white;
+			box-shadow: 0px 0px 5px white;
+		}
+	}
+}
+
+// therapy
+.therapy {
+	width: 100%;
+	h1 {
+		padding: 10px;
+		background-color: $white;
+		text-align: center;
+		font-weight: bold;
+		background-color: $main-color;
+		color: $white;
+		box-shadow: 5px 5px 10px black;
+	}
+	.therapy-container {
+		.therapy-box {
+			display: flex;
+			flex-direction: row;
+			padding: 30px;
+			background-color: $white;
+			.therapy-img {
+				img {
+					width: 250px;
+					height: 250px;
+				}
+			}
+			.therapy-text {
+				padding: 20px;
+				border-radius: 30px;
+				margin-left: 20px;
+				background-color: $second-main-color;
+				border: 1px solid $main-color
+			}
 		}
 	}
 }
