@@ -94,17 +94,17 @@ header {
 		.consultation-localization {
 			padding: 10px 0px;
 			color: $main-color;
+			font-size: 16px;
 		}
 		.consultation-describe {
-			padding: 10px 0px;
-			font-size: 18px;
+			font-size: 14px;
 		}
 		.consultation-btn {
 			background-color: $main-color;
 			color: $white;
 			padding: 10px;
 			border-radius: 10px;
-			font-size: 18px;
+			font-size: 12px;
 			transition: 0.5s;
 		}
 		.consultation-btn:hover {
@@ -113,27 +113,36 @@ header {
 	}
 }
 .card-group {
+	background-color: $main-color;
 	overflow: hidden;
 	padding: 0px;
 	margin-top: 5px;
-	background-color: $main-color;
-	.card {
-		margin: 30px;
-		img {
-			height: 400px;
-			object-fit: cover;
-			border-bottom: 1px solid gray;
+	.row {
+		justify-content: space-around;
+		align-items:stretch;
+		padding: 20px;
+		.card {
+			padding: 0px;
+			margin: 10px;
+			img {
+				height: 300px;
+				object-fit: cover;
+				border-bottom: 1px solid gray;
+			}
+			.card-title {
+				margin: 20px;
+				padding: 10px 0px;
+				color: $main-color;
+				border-top: 1px solid gray;
+				border-bottom: 1px solid gray;
+			}
+			.card-text{
+				font-size: 14px;
+			}
 		}
-		.card-title {
-			margin: 20px;
-			padding: 10px 0px;
-			color: $main-color;
-			border-top: 1px solid gray;
-			border-bottom: 1px solid gray;
+		.card:hover {
+			box-shadow: 0px 5px 5px white;
 		}
-	}
-	.card:hover {
-		box-shadow: 0px 5px 5px white;
 	}
 }
 
@@ -161,15 +170,10 @@ header {
 	}
 	.card-group {
 		.card {
-			img {
-				height: 250px;
-			}
+			width: 220px;
 			.card-title {
 				margin-top: 20px;
-				font-size: 18px;
-			}
-			.card-text {
-				font-size: 14px;
+				font-size: 17px;
 			}
 		}
 	}
@@ -205,16 +209,7 @@ header {
 	}
 	.card-group {
 		.card {
-			img {
-				height: 400px;
-			}
-			.card-title {
-				margin-top: 20px;
-				font-size: 20px;
-			}
-			.card-text {
-				font-size: 14px;
-			}
+			width: 300px;
 		}
 	}
 }
@@ -257,6 +252,15 @@ header {
 			}
 		}
 	}
+	.card-group {
+		justify-content: center;
+		.card {
+			width: 250px;
+			.card-text {
+				font-size: 14px;
+			}
+		}
+	}
 }
 @media (min-width: 1200px) {
 	nav {
@@ -282,6 +286,14 @@ header {
 						text-align: justify;
 					}
 				}
+			}
+		}
+	}
+	.card-group {
+		.card {
+			width: 300px;
+			.card-title {
+				font-size: 18px;
 			}
 		}
 	}

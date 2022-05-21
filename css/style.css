@@ -109,11 +109,11 @@ header .hero-bg .hero-img .hero-container .hero-description {
 .consultation .container .consultation-localization {
   padding: 10px 0px;
   color: #7d41e1;
+  font-size: 16px;
 }
 
 .consultation .container .consultation-describe {
-  padding: 10px 0px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .consultation .container .consultation-btn {
@@ -121,7 +121,7 @@ header .hero-bg .hero-img .hero-container .hero-description {
   color: #FFF;
   padding: 10px;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 12px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -132,24 +132,34 @@ header .hero-bg .hero-img .hero-container .hero-description {
 }
 
 .card-group {
+  background-color: #7d41e1;
   overflow: hidden;
   padding: 0px;
   margin-top: 5px;
-  background-color: #7d41e1;
 }
 
-.card-group .card {
-  margin: 30px;
+.card-group .row {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 20px;
 }
 
-.card-group .card img {
-  height: 400px;
+.card-group .row .card {
+  padding: 0px;
+  margin: 10px;
+}
+
+.card-group .row .card img {
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   border-bottom: 1px solid gray;
 }
 
-.card-group .card .card-title {
+.card-group .row .card .card-title {
   margin: 20px;
   padding: 10px 0px;
   color: #7d41e1;
@@ -157,7 +167,11 @@ header .hero-bg .hero-img .hero-container .hero-description {
   border-bottom: 1px solid gray;
 }
 
-.card-group .card:hover {
+.card-group .row .card .card-text {
+  font-size: 14px;
+}
+
+.card-group .row .card:hover {
   -webkit-box-shadow: 0px 5px 5px white;
           box-shadow: 0px 5px 5px white;
 }
@@ -182,15 +196,12 @@ header .hero-bg .hero-img .hero-container .hero-description {
     font-size: 12px;
     text-align: justify;
   }
-  .card-group .card img {
-    height: 250px;
+  .card-group .card {
+    width: 220px;
   }
   .card-group .card .card-title {
     margin-top: 20px;
-    font-size: 18px;
-  }
-  .card-group .card .card-text {
-    font-size: 14px;
+    font-size: 17px;
   }
 }
 
@@ -216,15 +227,8 @@ header .hero-bg .hero-img .hero-container .hero-description {
     font-size: 15px;
     text-align: justify;
   }
-  .card-group .card img {
-    height: 400px;
-  }
-  .card-group .card .card-title {
-    margin-top: 20px;
-    font-size: 20px;
-  }
-  .card-group .card .card-text {
-    font-size: 14px;
+  .card-group .card {
+    width: 300px;
   }
 }
 
@@ -259,6 +263,17 @@ header .hero-bg .hero-img .hero-container .hero-description {
     font-size: 14px;
     text-align: justify;
   }
+  .card-group {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card-group .card {
+    width: 250px;
+  }
+  .card-group .card .card-text {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -283,6 +298,12 @@ header .hero-bg .hero-img .hero-container .hero-description {
   header .hero-bg .hero-img .hero-container .hero-description {
     font-size: 16px;
     text-align: justify;
+  }
+  .card-group .card {
+    width: 300px;
+  }
+  .card-group .card .card-title {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
