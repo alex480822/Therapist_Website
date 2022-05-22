@@ -13,7 +13,7 @@
 
 body {
   position: relative;
-  background-color: #ddd;
+  background-color: #FFF;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -195,11 +195,17 @@ header .hero-bg .hero-img .hero-container .hero-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 30px;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 25px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #FFF;
 }
 
@@ -211,7 +217,6 @@ header .hero-bg .hero-img .hero-container .hero-description {
 .therapy .therapy-container .therapy-box .therapy-text {
   padding: 20px;
   border-radius: 30px;
-  margin-left: 20px;
   background-color: #78e6f2;
   border: 1px solid #7d41e1;
 }
@@ -269,6 +274,16 @@ header .hero-bg .hero-img .hero-container .hero-description {
   }
   .card-group .card {
     width: 300px;
+  }
+  .therapy-container .therapy-box {
+    padding: 30px;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .therapy-container .therapy-text {
+    margin-left: 20px;
   }
 }
 

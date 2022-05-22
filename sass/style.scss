@@ -11,7 +11,7 @@
 }
 body {
 	position: relative;
-	background-color: #ddd;
+	background-color: $white;
 	font-family: "Montserrat", sans-serif;
 }
 
@@ -161,8 +161,10 @@ header {
 	.therapy-container {
 		.therapy-box {
 			display: flex;
-			flex-direction: row;
-			padding: 30px;
+			flex-direction: column;
+			margin: 25px 0px;
+			justify-content: center;
+			align-items: center;
 			background-color: $white;
 			.therapy-img {
 				img {
@@ -173,9 +175,8 @@ header {
 			.therapy-text {
 				padding: 20px;
 				border-radius: 30px;
-				margin-left: 20px;
 				background-color: $second-main-color;
-				border: 1px solid $main-color
+				border: 1px solid $main-color;
 			}
 		}
 	}
@@ -245,6 +246,15 @@ header {
 	.card-group {
 		.card {
 			width: 300px;
+		}
+	}
+	.therapy-container {
+		.therapy-box {
+			padding: 30px;
+			flex-direction: row !important;
+		}
+		.therapy-text{
+			margin-left: 20px;
 		}
 	}
 }
