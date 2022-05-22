@@ -146,7 +146,7 @@ header {
 	}
 }
 
-// therapy
+// therapy section
 .therapy {
 	width: 100%;
 	h1 {
@@ -182,6 +182,45 @@ header {
 	}
 }
 
+// Prices section
+.prices {
+	.prices-container {
+		.row {
+			margin: 0;
+			justify-content: space-between;
+			align-items: center;
+			.prices-box {
+				padding: 0;
+				margin-top: 20px;
+				border: 1px solid $second-main-color;
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				overflow: hidden;
+				.prices-box-bg {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					height: 300px;
+					background-color: $main-color;
+
+					.prices-logo {
+						font-size: 70px;
+						color: $white;
+					}
+					.prices-title {
+						color: $white;
+					}
+				}
+				.prices-box-details {
+					padding: 20px;
+					text-align: left;
+				}
+			}
+		}
+	}
+}
+
 @media (min-width: 576px) {
 	header {
 		.hero-bg {
@@ -210,6 +249,15 @@ header {
 			.card-title {
 				margin-top: 20px;
 				font-size: 17px;
+			}
+		}
+	}
+	.prices {
+		.prices-container {
+			.row {
+				.prices-box {
+					width: 45%;
+				}
 			}
 		}
 	}
@@ -253,7 +301,7 @@ header {
 			padding: 30px;
 			flex-direction: row !important;
 		}
-		.therapy-text{
+		.therapy-text {
 			margin-left: 20px;
 		}
 	}

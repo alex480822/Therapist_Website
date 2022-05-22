@@ -221,6 +221,57 @@ header .hero-bg .hero-img .hero-container .hero-description {
   border: 1px solid #7d41e1;
 }
 
+.prices .prices-container .row {
+  margin: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.prices .prices-container .row .prices-box {
+  padding: 0;
+  margin-top: 20px;
+  border: 1px solid #78e6f2;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+}
+
+.prices .prices-container .row .prices-box .prices-box-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 300px;
+  background-color: #7d41e1;
+}
+
+.prices .prices-container .row .prices-box .prices-box-bg .prices-logo {
+  font-size: 70px;
+  color: #FFF;
+}
+
+.prices .prices-container .row .prices-box .prices-box-bg .prices-title {
+  color: #FFF;
+}
+
+.prices .prices-container .row .prices-box .prices-box-details {
+  padding: 20px;
+  text-align: left;
+}
+
 @media (min-width: 576px) {
   header .hero-bg {
     background-repeat: no-repeat;
@@ -247,6 +298,9 @@ header .hero-bg .hero-img .hero-container .hero-description {
   .card-group .card .card-title {
     margin-top: 20px;
     font-size: 17px;
+  }
+  .prices .prices-container .row .prices-box {
+    width: 45%;
   }
 }
 
