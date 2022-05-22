@@ -168,8 +168,8 @@ header {
 			background-color: $white;
 			.therapy-img {
 				img {
-					width: 250px;
-					height: 250px;
+					width: 200px;
+					height: 200px;
 				}
 			}
 			.therapy-text {
@@ -184,11 +184,20 @@ header {
 
 // Prices section
 .prices {
+	h1 {
+		padding: 10px;
+		margin: 40px 0px;
+		background-color: $white;
+		text-align: center;
+		font-weight: bold;
+		background-color: $main-color;
+		color: $white;
+		box-shadow: 5px 5px 10px black;
+	}
 	.prices-container {
 		.row {
 			margin: 0;
 			justify-content: space-between;
-			align-items: center;
 			.prices-box {
 				padding: 0;
 				margin-top: 20px;
@@ -204,22 +213,28 @@ header {
 					height: 300px;
 					background-color: $main-color;
 
-					.prices-logo {
+					.prices-box-logo {
 						font-size: 70px;
 						color: $white;
 					}
-					.prices-title {
+					.prices-box-title {
 						color: $white;
+						margin: 0px;
+						text-align: center;
 					}
 				}
 				.prices-box-details {
 					padding: 20px;
 					text-align: left;
+					p{
+						margin: 5px;
+					}
+					}
 				}
 			}
 		}
 	}
-}
+
 
 @media (min-width: 576px) {
 	header {
@@ -298,7 +313,7 @@ header {
 	}
 	.therapy-container {
 		.therapy-box {
-			padding: 30px;
+			padding: 10px;
 			flex-direction: row !important;
 		}
 		.therapy-text {
@@ -352,6 +367,11 @@ header {
 			.card-text {
 				font-size: 14px;
 			}
+		}
+	}
+	.prices {
+		.prices-container {
+			padding: 50px 100px;
 		}
 	}
 }
