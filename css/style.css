@@ -287,6 +287,18 @@ header .hero-bg .hero-img .hero-container .hero-description {
   margin: 5px;
 }
 
+.office h1 {
+  padding: 10px;
+  margin: 40px 0px;
+  background-color: #FFF;
+  text-align: center;
+  font-weight: bold;
+  background-color: #7d41e1;
+  color: #FFF;
+  -webkit-box-shadow: 5px 5px 10px black;
+          box-shadow: 5px 5px 10px black;
+}
+
 @media (min-width: 576px) {
   header .hero-bg {
     background-repeat: no-repeat;

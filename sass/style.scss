@@ -226,15 +226,26 @@ header {
 				.prices-box-details {
 					padding: 20px;
 					text-align: left;
-					p{
+					p {
 						margin: 5px;
-					}
 					}
 				}
 			}
 		}
 	}
-
+}
+.office {
+	h1 {
+		padding: 10px;
+		margin: 40px 0px;
+		background-color: $white;
+		text-align: center;
+		font-weight: bold;
+		background-color: $main-color;
+		color: $white;
+		box-shadow: 5px 5px 10px black;
+	}
+}
 
 @media (min-width: 576px) {
 	header {
