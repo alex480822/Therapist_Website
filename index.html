@@ -19,6 +19,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <!-- style css  -->
     <link rel="stylesheet" href="css/style.css">
     <!-- kit fontawesome -->
@@ -162,7 +166,7 @@
                     <div class="therapy-img">
                         <img src="/img/mother-3500136-violet.png" alt="">
                     </div>
-                    <div class="therapy-text">
+                    <div class="therapy-text" data-aos="fade-left" data-aos-delay="200">
                         <div class="therapy-title">
                             <h3>Terapia mowy bezdźwięcznej</h3>
                         </div>
@@ -177,7 +181,7 @@
                     <div class="therapy-img">
                         <img src="/img/family-3493243-violet.png" alt="">
                     </div>
-                    <div class="therapy-text">
+                    <div class="therapy-text" data-aos="fade-left" data-aos-delay="200">
                         <div class="therapy-title">
                             <h3>Terapia jąkania u dorosłych</h3>
                         </div>
@@ -192,7 +196,7 @@
                     <div class="therapy-img">
                         <img src="/img/silhouette-3299358-violet.png" alt="">
                     </div>
-                    <div class="therapy-text">
+                    <div class="therapy-text" data-aos="fade-left" data-aos-delay="200">
                         <div class="therapy-title">
                             <h3>Terapia seplenienia u dzieci i dorosłych</h3>
                         </div>
@@ -207,7 +211,7 @@
                     <div class="therapy-img">
                         <img src="/img/silhouette-3299372-violet.png" alt="">
                     </div>
-                    <div class="therapy-text">
+                    <div class="therapy-text" data-aos="fade-left" data-aos-delay="200">
                         <div class="therapy-title">
                             <h3>Rotacyzm u dzieci </h>
                         </div>
@@ -235,6 +239,7 @@
                                 <h3>Konsultacja<br>logopedyczna</h3>
                             </div>
                         </div>
+                        <div class="prices-amound">95 zł</div>
                         <div class="prices-box-details">
                             <div class="prices-list">
                                 <i class="fa-solid fa-caret-right"></i>
@@ -280,6 +285,7 @@
                                 <h3>Pakiet 6 zajęć</h3>
                             </div>
                         </div>
+                        <div class="prices-amound"> 490 zł</div>
                         <div class="prices-box-details">
                             <div class="prices-list">
                                 <i class="fa-solid fa-caret-right"></i>
@@ -379,6 +385,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <!-- AOS Animation  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+
+            startEvent: 'DOMContentLoaded',
+            offset: 200,
+            once: true
+        });
+    </script>
 
 </body>
 
