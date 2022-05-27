@@ -11,14 +11,49 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
-  background-color: #FFF;
+  background-color: #fff;
   font-family: "Montserrat", sans-serif;
 }
 
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+main .white-block {
+  position: absolute;
+  height: 40px;
+  width: 45%;
+  background-color: #7d41e1;
+}
+
+main .white-block-left {
+  bottom: 0;
+  left: -50px;
+  -webkit-transform: skew(45deg);
+          transform: skew(45deg);
+}
+
+main .white-block-right {
+  top: 0;
+  right: -50px;
+  -webkit-transform: skew(45deg);
+          transform: skew(45deg);
+}
+
+.bar {
+  position: relative;
+}
+
 nav {
-  background-color: #FFF;
+  background-color: #fff;
   -webkit-box-shadow: 0px 1px 10px #7d41e1;
           box-shadow: 0px 1px 10px #7d41e1;
   z-index: 1;
@@ -52,7 +87,7 @@ nav .navbar-collapse .nav-link {
 }
 
 nav .navbar-collapse .nav-link:hover {
-  color: #FFF;
+  color: #fff;
   background-color: #7d41e1;
 }
 
@@ -79,7 +114,7 @@ header .hero-bg .hero-img .hero-container {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 10px;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 10px;
   -webkit-box-shadow: 2px 2px 5px;
           box-shadow: 2px 2px 5px;
@@ -103,7 +138,7 @@ header .hero-bg .hero-img .hero-container .hero-description {
 }
 
 .consultation {
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .consultation .container .consultation-localization {
@@ -118,7 +153,7 @@ header .hero-bg .hero-img .hero-container .hero-description {
 
 .consultation .container .consultation-btn {
   background-color: #7d41e1;
-  color: #FFF;
+  color: #fff;
   padding: 10px;
   border-radius: 10px;
   font-size: 12px;
@@ -182,11 +217,11 @@ header .hero-bg .hero-img .hero-container .hero-description {
 
 .therapy h1 {
   padding: 10px;
-  background-color: #FFF;
+  background-color: #fff;
   text-align: center;
   font-weight: bold;
   background-color: #7d41e1;
-  color: #FFF;
+  color: #fff;
   -webkit-box-shadow: 5px 5px 10px black;
           box-shadow: 5px 5px 10px black;
 }
@@ -206,7 +241,7 @@ header .hero-bg .hero-img .hero-container .hero-description {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .therapy .therapy-container .therapy-box .therapy-img img {
@@ -221,18 +256,23 @@ header .hero-bg .hero-img .hero-container .hero-description {
   border: 1px solid #7d41e1;
 }
 
-.therapy .therapy-container .therapy-box .therapy-text h3, .therapy .therapy-container .therapy-box .therapy-text p {
+.therapy .therapy-container .therapy-box .therapy-text h3,
+.therapy .therapy-container .therapy-box .therapy-text p {
   padding: 5px;
+}
+
+.prices .prices-title-box {
+  margin: 50px 0;
 }
 
 .prices h1 {
   padding: 10px;
-  margin: 40px 0px;
-  background-color: #FFF;
+  margin: 0px 0px;
+  background-color: #fff;
   text-align: center;
   font-weight: bold;
   background-color: #7d41e1;
-  color: #FFF;
+  color: #fff;
   -webkit-box-shadow: 5px 5px 10px black;
           box-shadow: 5px 5px 10px black;
 }
@@ -247,7 +287,6 @@ header .hero-bg .hero-img .hero-container .hero-description {
 .prices .prices-container .row .prices-box {
   padding: 0;
   margin-top: 20px;
-  border: 1px solid #78e6f2;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   overflow: hidden;
@@ -273,11 +312,11 @@ header .hero-bg .hero-img .hero-container .hero-description {
 
 .prices .prices-container .row .prices-box .prices-box-bg .prices-box-logo {
   font-size: 70px;
-  color: #FFF;
+  color: #fff;
 }
 
 .prices .prices-container .row .prices-box .prices-box-bg .prices-box-title {
-  color: #FFF;
+  color: #fff;
   margin: 0px;
   text-align: center;
 }
@@ -289,11 +328,12 @@ header .hero-bg .hero-img .hero-container .hero-description {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
-  color: #FFF;
+  color: #fff;
 }
 
 .prices .prices-container .row .prices-box .prices-box-details {
   padding: 20px;
+  border: 2px solid #78e6f2;
   text-align: left;
 }
 
@@ -304,11 +344,11 @@ header .hero-bg .hero-img .hero-container .hero-description {
 .office h1 {
   padding: 10px;
   margin: 40px 0px;
-  background-color: #FFF;
+  background-color: #fff;
   text-align: center;
   font-weight: bold;
   background-color: #7d41e1;
-  color: #FFF;
+  color: #fff;
   -webkit-box-shadow: 5px 5px 10px black;
           box-shadow: 5px 5px 10px black;
 }

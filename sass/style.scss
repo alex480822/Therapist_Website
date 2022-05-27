@@ -9,12 +9,38 @@
 	padding: 0;
 	margin: 0;
 }
+html {
+	scroll-behavior: smooth;
+}
 body {
 	position: relative;
 	background-color: $white;
 	font-family: "Montserrat", sans-serif;
 }
-
+main {
+	margin: 0 auto;
+	max-width: 1200px;
+	position: relative;
+	.white-block {
+		position: absolute;
+		height: 40px;
+		width: 45%;
+		background-color: $main-color;
+		&-left {
+			bottom: 0;
+			left: -50px;
+			transform: skew(45deg);
+		}
+		&-right {
+			top: 0;
+			right: -50px;
+			transform: skew(45deg);
+		}
+	}
+}
+.bar {
+	position: relative;
+}
 nav {
 	background-color: $white;
 	box-shadow: 0px 1px 10px $main-color;
@@ -177,7 +203,8 @@ header {
 				border-radius: 30px;
 				background-color: rgb(250, 250, 250);
 				border: 1px solid $main-color;
-				h3, p{
+				h3,
+				p {
 					padding: 5px;
 				}
 			}
@@ -187,9 +214,12 @@ header {
 
 // Prices section
 .prices {
+	.prices-title-box {
+		margin: 50px 0;
+	}
 	h1 {
 		padding: 10px;
-		margin: 40px 0px;
+		margin: 0px 0px;
 		background-color: $white;
 		text-align: center;
 		font-weight: bold;
@@ -204,7 +234,6 @@ header {
 			.prices-box {
 				padding: 0;
 				margin-top: 20px;
-				border: 1px solid $second-main-color;
 				border-top-left-radius: 20px;
 				border-top-right-radius: 20px;
 				overflow: hidden;
@@ -226,7 +255,7 @@ header {
 						text-align: center;
 					}
 				}
-				.prices-amound{
+				.prices-amound {
 					width: 100%;
 					padding: 10px;
 					background-color: $light-second-main-color;
@@ -237,6 +266,7 @@ header {
 				}
 				.prices-box-details {
 					padding: 20px;
+					border: 2px solid $second-main-color;
 					text-align: left;
 					p {
 						margin: 5px;
@@ -290,16 +320,16 @@ header {
 			}
 		}
 	}
-	.therapy{
-		.container{
-		.therapy-box{
-			.therapy-img {
-				img {
-					width: 210px;
-					height: 190px;
+	.therapy {
+		.container {
+			.therapy-box {
+				.therapy-img {
+					img {
+						width: 210px;
+						height: 190px;
+					}
 				}
 			}
-		}
 		}
 	}
 	.prices {
