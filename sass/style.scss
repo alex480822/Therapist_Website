@@ -29,11 +29,13 @@ main {
 		&-left {
 			bottom: 0;
 			left: -50px;
+			margin-left: 5%;
 			transform: skew(45deg);
 		}
 		&-right {
 			top: 0;
 			right: -50px;
+			margin-right: 5%;
 			transform: skew(45deg);
 		}
 	}
@@ -214,9 +216,6 @@ header {
 
 // Prices section
 .prices {
-	.prices-title-box {
-		margin: 50px 0;
-	}
 	h1 {
 		padding: 10px;
 		margin: 0px 0px;

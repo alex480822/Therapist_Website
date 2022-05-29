@@ -37,6 +37,7 @@ main .white-block {
 main .white-block-left {
   bottom: 0;
   left: -50px;
+  margin-left: 5%;
   -webkit-transform: skew(45deg);
           transform: skew(45deg);
 }
@@ -44,6 +45,7 @@ main .white-block-left {
 main .white-block-right {
   top: 0;
   right: -50px;
+  margin-right: 5%;
   -webkit-transform: skew(45deg);
           transform: skew(45deg);
 }
@@ -259,10 +261,6 @@ header .hero-bg .hero-img .hero-container .hero-description {
 .therapy .therapy-container .therapy-box .therapy-text h3,
 .therapy .therapy-container .therapy-box .therapy-text p {
   padding: 5px;
-}
-
-.prices .prices-title-box {
-  margin: 50px 0;
 }
 
 .prices h1 {
